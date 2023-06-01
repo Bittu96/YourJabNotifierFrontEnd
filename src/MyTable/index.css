@@ -1,0 +1,113 @@
+* {
+  /* border: 1px solid blue; */
+}
+
+.table-container {
+  margin: auto;
+}
+
+.table-item-base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 1000px;
+}
+
+.table-item-open {
+  margin-top: 5px;
+  height: 360px;
+  max-width: 700px;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out all;
+}
+
+.table-item-close {
+  background-color: transparent !important;
+  margin-top: 5px;
+  height: 0px;
+  border-radius: 30px;
+  max-width: 700px;
+  transition: 0.2s ease-in-out all;
+}
+
+.center-name {
+  font-size: 12px;
+  text-align: left;
+}
+
+.available {
+  background-color: #e4f7d5;
+  color: #255500;
+  border: 0.5px solid #c5eca7;
+}
+
+.not-available {
+  background-color: #fff5eb;
+  color: #a55506;
+  border: 0.5px solid #eedfd0;
+}
+
+.drop-icon-open {
+  color: #6db834;
+  transform: rotate(0deg);
+  transition: 1s ease-in-out all;
+}
+
+.drop-icon-close {
+  color: #6db834;
+  transform: rotate(45deg);
+  transition: 1s ease-in-out all;
+}
+
+.drop-icon-color {
+  color: orange;
+}
+
+.vaccine-name {
+  border: 2px solid white;
+  border-radius: 7px;
+  padding: 5px;
+  min-width: 80px;
+  max-width: 90px;
+  text-align: center;
+  margin: auto;
+}
+
+.total-doses {
+  text-align: left;
+}
+
+.fee-type {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.containerTable {
+  margin: 0px !important;
+}
+
+.details-table {
+  background-color: rgb(255, 255, 255, 0.3);
+  color: inherit !important;
+  box-shadow: none;
+  border: 0;
+}
+
+.tableSideHeadings {
+  font-weight: bold !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .table-item-base {
+    cursor: default;
+  }
+}
